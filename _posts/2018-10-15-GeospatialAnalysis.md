@@ -2,7 +2,6 @@
 layout: post
 title: FOSS-Python-GeospatialAnalysis 
 git: https://github.com/Nancy-Chauhan/FOSS-Python-GeospatialAnalysis
-site: http://jamigibbs.github.io/phantom
 ---
 
 Recently Attented The Workshop on Free and Open Source libraries of Python for Geo spatial Analysis and Visualisation(Maps and Satellite imageries) and Worked on this Project during Pycon India 2018 held in Hyderabad 

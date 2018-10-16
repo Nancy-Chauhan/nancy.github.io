@@ -1,33 +1,50 @@
 ---
 layout: default
-title: Home
+title: home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-
-    {{ post.content }}
-  </article>
-  {% endfor %}
+<div class="row">
+  <div class="large-12 large-centered columns">
+    <header class="masthead">
+      <div>
+        <img src="nancy.jpg" alt="nancy chauhan">
+      </div>
+      <div class="row social">
+        <ul>
+          <li><a href="https://twitter.com/nancy_nano_"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://github.com/Nancy-Chauhan"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/nancy-chauhan-5a309b15b/"><i class="fa fa-linkedin"></i></a></li>
+	  <li><a href="https://medium.com/@nancychn1"><i class="fa fa-medium"></i></a></li>
+        </ul>
+      </div>
+    </header>
+  </div>
 </div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+<div class="row">
+  <div class="large-6 large-offset-3 columns">
+    <div class="content-section">
+      <p>
+        Hello! I’m Nancy Chauhan. I love to<strong> LEARN</strong>and <strong>EXPLORE</strong>.I'm a Student, Electronics Hobbyist, Artist,Open Source Software and Hardware Contributor from Noida, India. I am currently pursing Bachelor of Technology in Electronics and Communication Engineering from <a href="http://iiitu.ac.in/">Indian Institute of Information and Technology, Una , In.</a>
+      </p>
+    </div>
+    <main>
+      <div class="posts">
+        <h1>Latest Posts</h1>
+        {% for post in site.posts limit:5 %}
+          <article class="project-post">
+            <h3>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </h3>
+            <div class="post-date">
+              <time datetime="post.date | date_to_xmlschema">{{ post.date | date_to_long_string }}</time>
+            </div>
+            {{ post.excerpt }}
+          </article>
+        {% endfor %}
+        <div class="navigation">
+          <a class="navigation-button" href="blog">View all</a>
+        </div>
+      </div>
+    </main>
+  </div>
 </div>

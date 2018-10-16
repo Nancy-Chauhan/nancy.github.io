@@ -36,7 +36,7 @@ a {
   color: $gray-1;
   text-decoration: none;
   font-weight: bold;
-  @include transition(color .1s ease-in-out);
+  @include transition(color .2s ease-in-out);
 
   // `:focus` is linked to `:hover` for basic accessibility
   &:hover,
@@ -86,4 +86,22 @@ ul {
     list-style: none;
     text-align: left;
   }
+}
+
+.content-section {
+  margin-bottom: 4em;
+}
+
+.project-post {
+  p {
+    font-size: 18px;
+    color: #8e8e8e;
+  }
+  .post-date {
+    font-size: 14px;
+  }
+}
+
+.content-section p {
+  line-height: 2;
 }

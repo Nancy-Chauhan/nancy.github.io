@@ -3,8 +3,9 @@
 // Headings, body text, lists, and other misc typographic elements.
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $root-font-family;
   margin-bottom: .5rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
   color: #4b4040;
   text-rendering: optimizeLegibility;

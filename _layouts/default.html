@@ -1,113 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-{% include head.html %}
-
-<body>
-
-  <div class="row">
-    <div class="large-12 large-centered columns">
-
-      <header class="masthead">
-        <img src="nancy.jpg" alt="Nancy Chauhan">
-      </header>
-
-    </div>
-  </div>
-
-  <div class="row">
-
-    <div class="large-6 large-offset-3 columns">
-
-      <div class="content-section">
-
+  {% include head.html %}
+  <body>
+    {{ content }}
+    <div class="row">
+      <footer class="large-6 large-offset-3 columns">
+        <h2>Contact Me</h2>
         <p>
-          Hello! I’m Nancy Chauhan. I love to <strong>LEARN</strong> and <strong>EXPLORE</strong>.I'm a Student, Electronics Hobbyist, Artist,Open Source Software and Hardware Contributor from Noida, India. I am currently pursing Bachelor of Technology in Electronics and Communication Engineering from <strong>Indian Institute of Information and Technology, Una , In.</strong>
+          Send me an <a href="mailto:nancychn1@gmail.com">email</a> or
+          ping me on <a href="https://twitter.com/nancy_nano_">Twitter</a>.
+          I’m also on <a href="https://github.com/Nancy-Chauhan">Github</a>
+          and <a href="https://www.linkedin.com/in/nancy-chauhan-5a309b15b/">Linkedin</a>.
         </p>
-
-      </div>
-
-      <main>
-        <h2>Latest Work</h2>
-        {% for post in site.posts %}
-          <div class="project-post">
-            <h3><a href="{{ post.site }}">{{ post.title }}</a></h3>
-
-            {{ post.content }}
-
-            <ul>
-              <li><a href="{{ post.git }}"><i class="fa fa-github"></i></a></li>
-              {% if post.site %}
-              <li><a href="{{ post.site }}"><i class="fa fa-link"></i></a></li>
-              {% endif %}
-            </ul>
-
-            <hr />
-          </div>
-        {% endfor %}
-      </main>
-
-      <footer>
-        <h2>Get In Touch!</h2>
-
-        <p>
-          Send me an
-          <a href="mailto:nancychn1@gmail.com">email</a> or ping me on
-          <a href="https://twitter.com/nancy_nano_">Twitter</a>. I’m also on
-          <a href="https://github.com/Nancy-Chauhan">Github</a>, and
-          <a href="https://www.linkedin.com/in/nancy-chauhan-5a309b15b/">Linkedin</a> if you’re into that sort of thing.
-        </p>
-
-  
       </footer>
-
     </div>
-
-    <div class="large-2 large-offset-1 columns social">
-      <ul>
-        <li>
-          <a href="https://github.com/Nancy-Chauhan">
-            <i class="fa fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/nancy-chauhan-5a309b15b/">
-            <i class="fa fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <li>
-          <a href="https://medium.com/@nancychn1">
-            <i class="fa fa-medium"></i>
-          </a>
-        </li>
-          <a href="https://twitter.com/nancy_nano_">
-            <i class="fa fa-twitter"></i>
-          </a>
-        </li>
-	<li>
-          <a href="mailto: nancychn1@gmail.com">
-            <i class="fa fa-envelope"></i>
-          </a>
-        </li>
-
-      </ul>
-    </div>
-
-  </div>
-
-  {% if site.google_analytics %}
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', '{{ site.google_analytics }}', 'auto');
-    ga('send', 'pageview');
-  </script> {% endif %}
-
-</body>
-
+    {% include footer.html %}
+  </body>
 </html>

@@ -1,33 +1,48 @@
-# Permalinks
-permalink:           pretty
+# Site settings
+title: Nancy chauhan
+description: Learner 
+email: nancychn1@gmail.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://nancy-chauhan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Setup
-title:               Nancy Chauhan
-tagline:             Learner
-url:                 https://nancy-chauhan.github.io/
-paginate:            1
-baseurl:             ""
+assets_version: 1
 
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          _sass
-  style:            :compressed
-
-# About/contact
-author:
-  name:              Nancy Chauhan
-  email:             nancychn1@gmail.com
-
-# Custom vars
-version:             2.0.1
+twitter:
+  username: nancy_nano_
 github:
-  repo:              https://github.com/Nancy-Chauhan/nancy-chauhan.github.io
-google_analytics:    UA-3363703-15
+  username: Nancy-Chauhan
+linkedin:
+  username: Nancy Chauhan
 
+social:
+  name: Nancy Chauhan
 
-# Gems
+lang: en_IN
+
+google_analytics: 'UA-73363098-1'
+# Build settings
+markdown: kramdown
+
+paginate: 6
+paginate_path: "/blog/:num/"
+permalink: pretty
+
+feed:
+  path: /feed/atom.xml
+
+author:
+  name: 'Nancy Chauhan'
+  twitter: nancy_nano_
+
 plugins:
-  # - jekyll-paginate
-  # - jekyll-gist
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - vendor

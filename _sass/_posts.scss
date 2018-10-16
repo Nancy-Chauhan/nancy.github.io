@@ -5,13 +5,16 @@
 
 main h2 {
   font-size: 22px;
-  margin-bottom: 2em;
 }
 
 .page,
 .post {
   margin-bottom: 4em;
 
+  ul li {
+    list-style: unset;
+  }
+  
   li + li {
     margin-top: .25rem;
   }
@@ -36,36 +39,9 @@ main h2 {
   color: #9a9a9a;
 }
 
-.content-section {
-  margin-bottom: 2em;
-}
-
-.project-post {
-  h3, p {
-    font-size: 18px;
-  }
-  p {
-    color: #8e8e8e;
-    margin: 20px 0 0 0;
-    line-height: 1.9;
-  }
-  ul li {
-    display: inline-block;
-    padding-right: 10px;
-    margin-top: 10px;
-  }
-}
-
-.content-section p {
-  line-height: 2;
-}
-
-
 
 // Related posts
 .related {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   margin-bottom: 2rem;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
@@ -94,4 +70,35 @@ main h2 {
       }
     }
   }
+}
+
+.image {
+  margin: 1em 0;
+  border: 1px solid #9a9a9a;
+  padding: 1em;
+  img {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+  .image-caption {
+    font-size: 0.75em;
+    font-style: italic;
+    color: #666666;
+    text-align: center;
+  }
+}
+
+.tick,
+.cross {
+  display: block;
+  text-align: center;
+}
+
+.tick {
+  color: green;
+}
+
+.cross {
+  color: red;
 }

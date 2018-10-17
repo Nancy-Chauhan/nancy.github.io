@@ -9,15 +9,6 @@ comments: true
 “And so, lifting as we climb, onward and upward we go, struggling and striving, and hoping that the buds and blossoms of our desires will burst into glorious fruition ere long.”
 — Mary Church Terrell
 
-<div class="image">
-    <a href="/public/img/woman.gif">
-        <img src="/public/img/woman.gif" />
-    </a>
-    <div alt="Woman Gif " class="image-caption">
-        Lift each other 
-    </div>
-</div>
-
 Recently I watched an Interview of Pepsico CEO Indra Nooyi and actress and humanitarian Priyanka Chopra with moderator Moira Forbes at the 2018 Forbes Women’s Summit. Indra Nooyi, by many accounts, is one of the most powerful women in the world. As Nooyi once said — “Yes, you can have it all, with the right support system, some sacrifices and some collateral damage under the water if you are willing to trade off.” Well, if you read between the lines, ‘the having it all’ part doesn’t seem so easy.
 
 Indra Nooyi spoke , That she loves the show -Sex and the City “I loved the show. Why did I love the show? Every episode had a lesson … but the biggest takeaway was the sisterhood of the women. The more I looked at that show, I said man, we have to create our own sisterhoods,” Nooyi told the audience at the Forbes Women Summit in New York City on Tuesday. “We need an environment where our sisterhood does not judge us but gives us constructive feedback. And where we can talk about Mr. Big!”

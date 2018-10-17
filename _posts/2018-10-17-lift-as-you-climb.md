@@ -24,7 +24,7 @@ Recently I watched an Interview of Pepsico CEO Indra Nooyi and actress and human
         <img alt="Conference" src="/public/img/woman.jpg" />
     </a>
     <div class="image-caption">
-        "https://www.youtube.com/watch?v=dQzvkvMl9tE&t=128s" tab
+        "https://www.youtube.com/watch?v=dQzvkvMl9tE&t=128s" 
     </div>
 </div>
 
@@ -37,7 +37,7 @@ I believe , There is a beauty in a thought of lifting others and yourself as you
         <img alt="Conference" src="/public/img/pycon.jpeg" />
     </a>
     <div class="image-caption">
-        "PyLady Talk , Pycon Conference 2018" tab
+        "PyLady Talk , Pycon Conference 2018" 
     </div>
 </div>
 
@@ -46,7 +46,7 @@ I believe , There is a beauty in a thought of lifting others and yourself as you
         <img alt="Conference" src="/public/img/carol.jpeg" />
     </a>
     <div class="image-caption">
-        "Carol Willing  , Pycon Conference 2018" tab
+        "Carol Willing  , Pycon Conference 2018" 
     </div>
 </div>
 

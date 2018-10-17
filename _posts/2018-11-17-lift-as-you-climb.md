@@ -1,13 +1,22 @@
 ---
 layout: post
 title:  'Lift As You Climb'
-date:   '2019-11-17'
+date:   '2019-10-17'
 categories: stories
-tags: ['Python', 'Indra Nooyi' , 'Carol Willing']
+tags: ['Python', 'Indra Nooyi' , 'Carol Willing' , 'Women In Tech', ]
 comments: true
 ---
 “And so, lifting as we climb, onward and upward we go, struggling and striving, and hoping that the buds and blossoms of our desires will burst into glorious fruition ere long.”
 — Mary Church Terrell
+
+<div class="image">
+    <a href="/public/img/woman.gif">
+        <img src="/public/img/woman.gif" />
+    </a>
+    <div alt="Woman Gif " class="image-caption">
+        Lift each other 
+    </div>
+</div>
 
 Recently I watched an Interview of Pepsico CEO Indra Nooyi and actress and humanitarian Priyanka Chopra with moderator Moira Forbes at the 2018 Forbes Women’s Summit. Indra Nooyi, by many accounts, is one of the most powerful women in the world. As Nooyi once said — “Yes, you can have it all, with the right support system, some sacrifices and some collateral damage under the water if you are willing to trade off.” Well, if you read between the lines, ‘the having it all’ part doesn’t seem so easy.
 

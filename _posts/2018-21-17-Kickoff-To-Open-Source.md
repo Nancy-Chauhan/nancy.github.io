@@ -8,10 +8,27 @@ comments: true
 ---
 Open Source is 💚
 
-Yes, and I am happy spreading this feeling of love.
-    More you contribute, more awareness and ideas you get!
-    Doing projects in collab with some super awesome people
-    You meet like minded people, and expand your network
-    Cant fix a bug!? Ask Help
-    
+In this Blog I want to cover my journey of fear :
+<div class="image">
+    <a href="/public/img/fear.gif">
+        <img alt="Conference" src="/public/img/fear.jpeg" />
+    </a>
+    <div class="image-caption">
+        "Fear!"
+    </div>
+</div>
 
+to overcoming fear !
+
+<div class="image">
+    <a href="/public/img/rock.png">
+        <img alt="Conference" src="/public/img/rock.png" />
+    </a>
+    <div class="image-caption">
+        "Loving it!"
+    </div>
+</div>
+
+So for every Developer the story of Open Souce starts with what?Why?How?
+
+What is open source, Why should we know about it ?

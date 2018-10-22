@@ -11,7 +11,7 @@ Open Source is 💚
 In this Blog I want to cover my journey of fear :
 <div class="image">
     <a href="/public/img/fear.gif">
-        <img alt="Conference" src="/public/img/fear.jpeg" />
+        <img alt="Octacat" src="/public/img/fear.jpeg" />
     </a>
     <div class="image-caption">
         "Fear!"
@@ -22,7 +22,7 @@ to overcoming fear !
 
 <div class="image">
     <a href="/public/img/rock.png">
-        <img alt="Conference" src="/public/img/rock.png" />
+        <img alt="Octacat" src="/public/img/rock.png" />
     </a>
     <div class="image-caption">
         "Loving it!"
@@ -32,3 +32,4 @@ to overcoming fear !
 So for every Developer the story of Open Souce starts with what?Why?How?
 
 What is open source, Why should we know about it ?
+

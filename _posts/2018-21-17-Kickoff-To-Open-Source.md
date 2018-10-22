@@ -88,7 +88,7 @@ Start by this https://github.com/firstcontributions/first-contributions
 <strong>Fork The Repository</strong><br>
 <strong>Clone The Repository</strong><br>
 
-<i>git clone "Copied URL"<i>
+<i>git clone "Copied URL"</i>
 
 <strong>Create a Branch</strong>
 

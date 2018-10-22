@@ -68,7 +68,7 @@ How to Enter this world ?
 
 1 ) Make a Github Account !
 <div class="image">
-    <a href="/public/img/Github.png">
+    <a href="/public/img/PR.png">
         <img alt="Octacat" src="/public/img/Github.png" />
     </a>
     <div class="image-caption">
@@ -111,7 +111,7 @@ If you go to your repository on GitHub, you’ll see a Compare & pull request bu
 
 <div class="image">
     <a href="/public/img/PR.png">
-        <img alt="Octacat" src="/public/img/PR.png" />
+        <img alt="Octacat" src="/public/img/Github.png" />
     </a>
     <div class="image-caption">
         "Yay"

@@ -69,7 +69,7 @@ How to Enter this world ?
 1 ) Make a Github Account !
 <div class="image">
     <a href="/public/img/PR.png">
-        <img alt="Octacat" src="/public/img/Github.png" />
+        <img alt="Octacat" src="/public/img/PR.png" />
     </a>
     <div class="image-caption">
         "Yay!"

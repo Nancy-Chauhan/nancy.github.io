@@ -95,7 +95,7 @@ Start by this https://github.com/firstcontributions/first-contributions
 Go to the directory where you cloned the repo.
 Create a new branch using git checkout command
 
-<i>git checkout -b <branch-name></i>
+<i>git checkout -b <branch-name> </i>
 
 <strong>Make Changes , Resolve Issue , Commit Those Changes! Push To GitHub!</strong>
 
@@ -103,7 +103,7 @@ To make commit and push changes,<br>
 
 <i>git add </i> <br>
 <i>git commit -m "Add [username] as a contributor"</i><br>
-<i>git push origin <branch name></i><br>
+<i>git push origin <branch name> </i><br>
 
 <strong>Open a Pull Request</strong><br>
 

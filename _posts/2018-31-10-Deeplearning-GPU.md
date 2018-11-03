@@ -11,3 +11,6 @@ of hardware. I have seen people training a simple deep learning model for days o
 their laptops (typically without GPUs) which leads to an impression that Deep Learning requires
 big systems to run execute.
 
+We know that the computationally intensive part of neural network is made up of multiple matrix multiplications. So how can we make it faster?
+
+We can simply do this by doing all the operations at the same time instead of doing it one after the other. This is in a nutshell why we use GPU (graphics processing units) instead of a CPU (central processing unit) for training a neural network.

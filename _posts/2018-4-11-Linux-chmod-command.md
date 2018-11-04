@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  '---
-layout: post
-title:  'Lift As You Climb'
-date:   '2018-10-17'
+title:  'Linux chmod Command'
+date:   '2018-11-04'
 categories: stories
-tags: ['Python', 'Indra Nooyi' , 'Carol Willing' , 'Women In Tech', ]
+tags: ['chmod', 'linux' ]
 comments: true
 ---
 I was Installing Jenkins from https://pkg.jenkins.io/debian-stable/ <br>

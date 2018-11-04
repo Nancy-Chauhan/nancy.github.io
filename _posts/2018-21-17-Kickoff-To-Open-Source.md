@@ -30,7 +30,7 @@ to overcoming fear !
     </div>
 </div>
 
-For every Developer the story of Open Source World starts with What? Why? How? What is open source, Why should we know about it ?How to get involved in it ?
+For every Developer the story of Open Source World starts with What? Why? How? What is open source, Why should we know about it ? How to get involved in it ?
 
 <h2>What ??</h2>
 
@@ -42,8 +42,8 @@ Refer it https://www.quora.com/Open-Source-When-is-beer-free-as-in-free-as-in-fr
 
 Why to know about it ?? These are some of the things we can experience through Open Source:<br>
 
- 1)Get experience working in real codebases ( Isn’t Awesome ? )<br>
- 2)Reading other people’s code , People from all over the world can contribute to your code.<br>
+ 1) Get experience working in real codebases ( Isn’t Awesome ? )<br>
+ 2) Reading other people’s code , People from all over the world can contribute to your code.<br>
     
 <div class="image">
     <a href="/public/img/together.png">
@@ -54,11 +54,11 @@ Why to know about it ?? These are some of the things we can experience through O
     </div>
 </div>
 
-3)Understanding complex systems, one piece at a time <br>
-4)Using versioning software (like git) in a proper way .<br>
-5)A very good code quality is maintained <br>
+3) Understanding complex systems, one piece at a time <br>
+4) Using versioning software (like git) in a proper way .<br>
+5) A very good code quality is maintained <br>
 
-<strong>Hence contributing to open source makes you a better developer !</strong>
+<strong>Hence contributing to open source makes you a better developer!</strong>
 
 <h2>How ??</h2>
 
@@ -79,6 +79,7 @@ How to Enter this world ?
 2 ) You can watch this YouTube video to have a great insight on Git commands.
 
 https://youtu.be/SWYqp7iY_Tc
+https://www.youtube.com/watch?v=D3RVdblCmk0 (This is 💚)
 
 3 ) Now Ready! Set! Go!
 
@@ -95,15 +96,15 @@ Start by this https://github.com/firstcontributions/first-contributions
 Go to the directory where you cloned the repo.
 Create a new branch using git checkout command
 
-<i>git checkout -b <branch-name> </i>
+<i>git checkout -b <branch-name></i>
 
 <strong>Make Changes , Resolve Issue , Commit Those Changes! Push To GitHub!</strong>
 
 To make commit and push changes,<br>
 
-<i>git add </i> <br>
-<i>git commit -m "Add [username] as a contributor" </i> <br>
-<i>git push origin <branch name> </i> <br>
+<i>git add</i> <br>
+<i>git commit -m "Add [username] as a contributor"</i> <br>
+<i>git push origin <branch name></i> <br>
 
 <strong>Open a Pull Request</strong><br>
 

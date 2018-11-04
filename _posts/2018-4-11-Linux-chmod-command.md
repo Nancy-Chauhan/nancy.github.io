@@ -23,7 +23,7 @@ I was stuck at the 2nd Step while adding entry in /etc/apt/sources.list: due to 
 
 <div class="image">
     <a href="/public/img/permissionprob.png">
-        <img alt="Permissions Problem tab" src="/public/img/permissionprob.png" />
+        <img alt="Permissions Problem" tab" src="/public/img/permissionprob.png" />
     </a>
 </div>
 

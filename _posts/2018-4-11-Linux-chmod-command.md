@@ -7,18 +7,23 @@ tags: ['chmod', 'linux' ]
 comments: true
 ---
 I was Installing Jenkins from https://pkg.jenkins.io/debian-stable/ <br>
+
 This is the Debian package repository of Jenkins to automate installation and upgrade. To use this repository, first add the key to your system: <br>
+
 1) wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -<br>
 Then add the following entry in your <strong>/etc/apt/sources.list:</strong><br> 
+
 2) deb https://pkg.jenkins.io/debian-stable binary/ <br>
 Update your local package index, then finally install Jenkins: <br>
+
 3)sudo apt-get update <br>
 sudo apt-get install jenkins
 
-I was stuck at the 2nd Step while adding entry in /etc/apt/sources.list: due to Permission issue , Here comes the role of <strong>chmod</strong>command 
+I was stuck at the 2nd Step while adding entry in /etc/apt/sources.list: due to Permission issue , so we will have to use  <strong>chmod</strong> command to change permissions of file : 
+
 <div class="image">
     <a href="/public/img/permissionprob.png">
-        <img alt="'Permissions Problem' tab" src="/public/img/permissionprob.png" />
+        <img alt="Permissions Problem tab" src="/public/img/permissionprob.png" />
     </a>
 </div>
 
@@ -28,7 +33,7 @@ I was stuck at the 2nd Step while adding entry in /etc/apt/sources.list: due to 
     </a>
 </div>
 
-So checking with <strong>ls -l</strong>command we can check the permissions of file :
+So checking with <strong>ls -l</strong> command we can check the permissions of file :
 
 <div class="image">
     <a href="/public/img/ls -l.png">
@@ -36,7 +41,8 @@ So checking with <strong>ls -l</strong>command we can check the permissions of f
     </a>
 </div>
 
-Here comes the role of <strong>chmod</strong>command <br>
+Here comes the role of <strong>chmod</strong> command <br>
+
 chmod is used to change the permissions of files or directories.
 On Linux and other Unix-like operating systems, there is a set of rules for each file which defines who can access that file, and how they can access it. These rules are called file permissions or file modes. The command name chmod stands for "change mode", and it is used to define the way a file can be accessed.
 In general, chmod commands take the form:

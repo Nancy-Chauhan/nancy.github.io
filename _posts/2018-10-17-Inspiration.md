@@ -18,5 +18,5 @@ comments: true
     </div>
 </div>
 
-<h2>"If you’re offered a seat on a rocket ship, don’t ask what seat! Just get on."
+<h2>"If you’re offered a seat on a rocket ship, don’t ask what seat! Just get on."<br>
 _ Sheryl Sandbery [COO, Facebook]<h2>

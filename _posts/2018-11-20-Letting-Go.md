@@ -9,6 +9,15 @@ comments: true
 
 “The trees are about to show us how lovely it is to let dead things go.”
 
+<div class="image">
+    <a href="/public/img/let-it-go-1024x1024.jpg">
+    </a>
+   <div class="image-caption">
+        "Letting Go" 
+    </div>
+</div>
+
+
 This is a Personal Blog about the Problem I faced in <strong>Letting Go</strong> some things ! It completely took me 6 months to 
 realise that it is best to let it go ! Letting go creates space for fresh beginnings:stripping you of what happened yesterday, 
 and enabling the doors of brand new opportunities to open today.

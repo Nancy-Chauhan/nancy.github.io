@@ -11,6 +11,7 @@ comments: true
 
 <div class="image">
     <a href="/public/img/let-it-go-1024x1024.jpg">
+      <img alt="Let Go" src="/public/img/let-it-go-1024x1024.jpg" />
     </a>
    <div class="image-caption">
         "Letting Go" 

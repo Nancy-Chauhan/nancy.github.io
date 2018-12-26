@@ -11,7 +11,7 @@ Many applications that run in a Java Virtual Machine (JVM),are run in containers
 
 <div class="image">
     <a href="/public/img/index.jpg">
-        <img alt="'Java and Docker' tab" src="/public/img/index.png" />
+        <img alt="'Java and Docker' tab" src="/public/img/index.jpg" />
     </a>
 </div>
 

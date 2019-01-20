@@ -98,11 +98,11 @@ The code : https://github.com/Nancy-Chauhan/HDMI-data-streams-Spartan-6
 
 While working on Project work, referring project developed by Bob Feng of Xilinx , Implementing a TMDS Video Interface in the Spartan-6 FPGA — Xilinx the following errors are encountered with the Verilog project:
 
-  1. Mixing of blocking/non-blocking assignments:
+  1) Mixing of blocking/non-blocking assignments:
 
 While the Synthesis of the Verilog Project ,the translation process is not followed due to Mixing of Blocking/non-blocking assignment error in the verilog code. This error occurs due to bugs in code.
 
-  2. In Spartan-6 FPGA, the BUFIO2 using the DIVIDE(2) applications occasionally enter a stuck state.
+  2) In Spartan-6 FPGA, the BUFIO2 using the DIVIDE(2) applications occasionally enter a stuck state.
     
 <div class="image">
     <a href="/public/img/Error1.png">
@@ -110,7 +110,7 @@ While the Synthesis of the Verilog Project ,the translation process is not follo
     </a>
 </div> 
 
-  3.  When the bit file is burned and Connected to DVI Display error message comes on Monitor Screen as shown in Figure . It       depicts that the Monitor is unable to recognise the Video Mode Information send by Programmed FPGA
+  3) When the bit file is burned and Connected to DVI Display error message comes on Monitor Screen as shown in Figure . It       depicts that the Monitor is unable to recognise the Video Mode Information send by Programmed FPGA
     
  <div class="image">
     <a href="/public/img/Video.jpg">
@@ -122,7 +122,7 @@ While the Synthesis of the Verilog Project ,the translation process is not follo
 
 The Bob Feng of Xilix design does the bare minimum to demonstrate the HDMI receiver/transmitter concept. It fails to work for most of the time due to EDID issues, and is not completely compatible with modern versions of Xilinx ISE.
 
- 1.Fixed mixing of blocking/non-blocking assignments
+1) Fixed mixing of blocking/non-blocking assignments
 
 I have fixed this error by doing changes in code as shown in line 236 of code (shown in figure ). Here non blocking assignment has to be used because it allows to schedule assignments without blocking the procedural flow. The relational operator is changed to remove this error.
 
@@ -132,7 +132,7 @@ I have fixed this error by doing changes in code as shown in line 236 of code (s
     </a>
 </div> 
 
-2. Fixed the BUFIO2 divide error
+2) Fixed the BUFIO2 divide error
 
 I observed this error occured since this setting is not supported and BUF102 are not compatibile with later versions of ISE. To rectify the Problem , rather than using BUFIO2 to divide the 100 MHz system clock by 2 in Verilog code,I have used a DCM (Digital Clock Manager) to generate the 50 MHz signal
 
@@ -142,7 +142,7 @@ I observed this error occured since this setting is not supported and BUF102 are
     </a>
 </div> 
 
-3. Implementation of EDID ROM for both HDMI input
+3) Implementation of EDID ROM for both HDMI input
 
  <div class="image">
     <a href="/public/img/edid1.png">

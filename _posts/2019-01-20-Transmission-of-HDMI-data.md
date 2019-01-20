@@ -61,8 +61,8 @@ We see the monitor display the coloured pattern as shown in Figure. The monitor 
 
 Using three DIP switches on the board (SW0, SW1, and SW3), the user is able to switch among different screen modes. Following test pattern are observed (shown in Figure) by selecting following switches which display 720p frames configurations :
 
-1) sw1 = 1, sw0 = 0
-2) sw2=1, sw1=0, sw0=0
+1. sw1 = 1, sw0 = 0
+2. sw2=1, sw1=0, sw0=0
 
 <div class="image">
     <a href="/public/img/result.jpg">
@@ -72,7 +72,7 @@ Using three DIP switches on the board (SW0, SW1, and SW3), the user is able to s
 
 Following test pattern are observed (shown in Figure ) by selecting following switches which:
 
-1) sw2=0, sw1 = 0, sw0 =1
+1. sw2=0, sw1 = 0, sw0 =1
 
 <div class="image">
     <a href="/public/img/output3.jpg">
@@ -98,11 +98,11 @@ The code : https://github.com/Nancy-Chauhan/HDMI-data-streams-Spartan-6
 
 While working on Project work, referring project developed by Bob Feng of Xilinx , Implementing a TMDS Video Interface in the Spartan-6 FPGA — Xilinx the following errors are encountered with the Verilog project:
 
-    Mixing of blocking/non-blocking assignments:
+  1. Mixing of blocking/non-blocking assignments:
 
 While the Synthesis of the Verilog Project ,the translation process is not followed due to Mixing of Blocking/non-blocking assignment error in the verilog code. This error occurs due to bugs in code.
 
-    In Spartan-6 FPGA, the BUFIO2 using the DIVIDE(2) applications occasionally enter a stuck state.
+  2. In Spartan-6 FPGA, the BUFIO2 using the DIVIDE(2) applications occasionally enter a stuck state.
     
 <div class="image">
     <a href="/public/img/Error1.png">
@@ -110,7 +110,7 @@ While the Synthesis of the Verilog Project ,the translation process is not follo
     </a>
 </div> 
 
-    When the bit file is burned and Connected to DVI Display error message comes on Monitor Screen as shown in Figure . It       depicts that the Monitor is unable to recognise the Video Mode Information send by Programmed FPGA
+  3.  When the bit file is burned and Connected to DVI Display error message comes on Monitor Screen as shown in Figure . It       depicts that the Monitor is unable to recognise the Video Mode Information send by Programmed FPGA
     
  <div class="image">
     <a href="/public/img/Video.jpg">
@@ -124,7 +124,13 @@ The Bob Feng of Xilix design does the bare minimum to demonstrate the HDMI recei
 
  1.Fixed mixing of blocking/non-blocking assignments
 
-I have fixed this error by doing changes in code as shown in line 236 of code (shown in figure ). Here non blocking assignment has to be used because it allows to schedule assignments without blocking the procedural flow. The relational operator is changed to remove this error
+I have fixed this error by doing changes in code as shown in line 236 of code (shown in figure ). Here non blocking assignment has to be used because it allows to schedule assignments without blocking the procedural flow. The relational operator is changed to remove this error.
+
+<div class="image">
+    <a href="/public/img/bugsol.PNG">
+        <img alt="'Project metrics' tab" src="/public/img/bugsol.PNG" />
+    </a>
+</div> 
 
 2. Fixed the BUFIO2 divide error
 

@@ -28,10 +28,10 @@ Compared to the CPU implementation, the FPGA video/image processing achieves abo
     </a>
 </div>
 
-1) Spartan 6 FPGA
-2) HDMI/DVI Monitor
-3) HDMI — DVI Cable (Required for DVI monitor)
-4) ISE 14.7 Webpapck Design Software
+1. Spartan 6 FPGA
+2. HDMI/DVI Monitor
+3. HDMI — DVI Cable (Required for DVI monitor)
+4. ISE 14.7 Webpapck Design Software
 
 <strong>Lets see the working !</strong>
 
@@ -51,7 +51,7 @@ To test the design, we need to attach a monitor to the HDMI OUT (J2) port of the
 
 *Output*
 
-We see the monitor display the coloured pattern as shown in Figure12. The monitor shows the default colored pattern without any change in switching configurations. When there is hdmi signal output in HDMI OUT port, LEDs( LD8, LD9, LD10, LD11 , LD12 ,LD13) lights up .
+We see the monitor display the coloured pattern as shown in Figure. The monitor shows the default colored pattern without any change in switching configurations. When there is hdmi signal output in HDMI OUT port, LEDs( LD8, LD9, LD10, LD11 , LD12 ,LD13) lights up .
 
 <div class="image">
     <a href="/public/img/output.jpeg">

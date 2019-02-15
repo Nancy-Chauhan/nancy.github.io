@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'How the hell do I exit:Guide to Vim'
+title: 'How the hell do I exit: Guide to Vim'
 date:   '2019-02-15'
 categories: stories
 tags: ['Terminal', 'Vim' ,]

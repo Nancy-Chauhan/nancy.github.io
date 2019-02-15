@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: 'How the hell do I exit:Guide to Vim'

@@ -15,6 +15,7 @@ Computer Architecture in Levels of Transformation
     <a href="/public/img/1.png">
         <img alt="Out of Memory" src="/public/img/1.png" />
     </a>
+  </div>
  
 
 Why should we worry about knowing it ?

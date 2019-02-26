@@ -7,7 +7,7 @@ tags: ['Level']
 comments: true
 ---
 
-As we say " Know the menu before you order food" and so the question arises how exactly problems , algorithms works ! 
+As we say " Know the menu before you order food" and so the question arises how exactly problems , algorithms works ! Just a short blog depicting the interaction of Problems / Algorithms with Electrons.
 
 Computer Architecture in Levels of Transformation
 
@@ -15,9 +15,6 @@ Computer Architecture in Levels of Transformation
     <a href="/public/img/1.png">
         <img alt="'Project metrics' tab" src="/public/img/1.png" />
     </a>
-    <div class="image-caption">
-        "Levels" 
-    </div>
 </div>
 
 Why should we worry about knowing it ?

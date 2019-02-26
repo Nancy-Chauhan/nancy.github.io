@@ -22,5 +22,7 @@ Why should we worry about knowing it ?
 If you master both hardware and software (and the interface between them): 
 
 1) Can develop better software if you understand the hardware
+
 2) Can design better hardware if you understand the software
+
 3) Can design a better computing system if you understand both

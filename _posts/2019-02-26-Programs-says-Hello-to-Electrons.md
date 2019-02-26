@@ -13,10 +13,12 @@ Computer Architecture in Levels of Transformation
 
 <div class="image">
     <a href="/public/img/1.png">
-        <img alt="Out of Memory" src="/public/img/1.png" />
+        <img alt="'Project metrics' tab" src="/public/img/1.png" />
     </a>
-  </div>
- 
+    <div class="image-caption">
+        "Levels" 
+    </div>
+</div>
 
 Why should we worry about knowing it ?
 

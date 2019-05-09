@@ -22,7 +22,7 @@ I was quite excited and delighted to be working with processing people. I have b
 
 <div class="image">
     <a href="/public/img/processing.jpg">
-        <img alt="'Project metrics' tab" src="/public/processing.jpg" />
+        <img alt="'Project metrics' tab" src="/public/img/processing.jpg" />
     </a>
 </div>
 

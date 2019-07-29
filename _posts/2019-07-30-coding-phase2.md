@@ -11,8 +11,11 @@ This is the fourth post on GSoC with FOSSi Foundation. This blog defines my work
 
 #### Yosys Synthesis with fusesoc
 1) Yosys is a framework for Verilog RTL synthesis.
+
 2) It was required in the openrisc project for monitoring resource usages.
+
 3) FuseSoC is a package manager and a set of build tools for HDL (Hardware Description Language) code. Its main purpose is to increase reuse of IP (Intellectual Property) cores and be an aid for creating, building and simulating SoC solutions.
+
 4) Fusesoc: The icestorm backend ( edalize ) uses yosys to handle synthesis, arachne-pnr for place & route and icepack for creating the bitstream.
 
 For using fusesoc, core description is a required file which contains all the information it needs to have about the core in order to run simulations on the core, build it for an FPGA target or use it as a dependency of another core.
@@ -62,6 +65,7 @@ mor1kx git:(yosys-ci) ✗ ./extract_stats.py < build/mor1kx_5.0-r3/tinyfpga_bx-i
 After this work, it is intended to parse and visualize the test results of the openrisc project and yosys synthesis using the Jenkins plugins.
 #### WIP: Parsing and visualizing test reports for mor1kx
 1) Tap Plugin: To be used for test results of openrisc projects
+
 2) Performance Plugin: To be used for synthesis and PNR metrics (e.g. used LUTs)
 
 <div class="image">
@@ -85,7 +89,10 @@ I also worked on improving CI pipeline by refactoring the Jenkins/Travis pipelin
 
 #### Contributions ( Code )
 1) https://github.com/openrisc/mor1kx/pull/87/
+
 2) https://github.com/openrisc/mor1kx/pull/89
+
 3) https://github.com/openrisc/or1k_marocchino/pull/14
+
 4) https://github.com/librecores/docker-images/pull/20
 

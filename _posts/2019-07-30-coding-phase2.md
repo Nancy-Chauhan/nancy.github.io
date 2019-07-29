@@ -14,13 +14,14 @@ This is the fourth post on GSoC with FOSSi Foundation. This blog defines my work
 
 2) It was required in the openrisc project for monitoring resource usages.
 
-3) FuseSoC is a package manager and a set of build tools for HDL (Hardware Description Language) code. Its main purpose is to increase reuse of IP (Intellectual Property) cores and be an aid for creating, building and simulating SoC solutions.
+3) <a href = "https://github.com/olofk/fusesoc">FuseSoC</a> is a package manager and a set of build tools for HDL (Hardware Description Language) code. Its main purpose is to increase reuse of IP (Intellectual Property) cores and be an aid for creating, building and simulating SoC solutions.
 
-4) Fusesoc: The icestorm backend ( edalize ) uses yosys to handle synthesis, arachne-pnr for place & route and icepack for creating the bitstream.
+4) Fusesoc: The icestorm backend ( <a href ="https://github.com/olofk/edalize">edalize</a> ) uses yosys to handle synthesis, arachne-pnr for place & route and icepack for creating the bitstream.
 
 For using fusesoc, core description is a required file which contains all the information it needs to have about the core in order to run simulations on the core, build it for an FPGA target or use it as a dependency of another core.
 
-So for the yosys synthesis in openrisc project, the first step was to generate yosys.log file, so I did some changes in mor1kx.core file in mor1kx repository to include icestorm tool. https://github.com/openrisc/mor1kx/pull/87/files#diff-c8ddd64aa00b9b454ca3c7264bc68c85
+So for the yosys synthesis in openrisc project, the first step was to generate yosys.log file, so I did some changes in mor1kx.core file in mor1kx repository to include icestorm tool. 
+<a href = "https://github.com/openrisc/mor1kx/pull/87/files#diff-c8ddd64aa00b9b454ca3c7264bc68c85"> Check the code ! </a>
 
 #### Modifying mor1kx.core : fusesoc (icestorm tool build)
 ```
@@ -47,7 +48,7 @@ The command used to only run synthesis in the icestorm backend by setting pnr to
 fusesoc run - target=tinyfpga_bx mor1k - pnr=none
 ```
 After generating yosys.log file with help of fusesoc, I created a parser to only get printing statistics from huge yosys.log file. I used Regular Expression to extract data from the log file.
-https://github.com/openrisc/mor1kx/pull/87/files#diff-b14da046228cc3073398f06064070769
+<a href = "https://github.com/openrisc/mor1kx/pull/87/files#diff-b14da046228cc3073398f06064070769">Check the code!</a>
 ```
  Quick Start ( commands )
 
@@ -85,14 +86,14 @@ After this work, it is intended to parse and visualize the test results of the o
     </div>
 </div>
 
-I also worked on improving CI pipeline by refactoring the Jenkins/Travis pipelines in mor1kx and or1k-marocchino project by creating Librecores-ci-openrisc dockerfile ( https://github.com/librecores/docker-images/tree/master/librecores-ci-openrisc ) based on standard Librecores-CI dockerfile.
+I also worked on improving CI pipeline by refactoring the Jenkins/Travis pipelines in mor1kx and or1k-marocchino project by creating Librecores-ci-openrisc dockerfile ( <a href ="https://github.com/librecores/docker-images/tree/master/librecores-ci-openrisc"> Check the code ! </a> ) based on standard Librecores-CI dockerfile.
 
 #### Contributions ( Code )
-1) https://github.com/openrisc/mor1kx/pull/87/
+1) <a href = "https://github.com/openrisc/mor1kx/pull/87/">https://github.com/openrisc/mor1kx/pull/87/</a>
 
-2) https://github.com/openrisc/mor1kx/pull/89
+2) <a href = "https://github.com/openrisc/mor1kx/pull/89">https://github.com/openrisc/mor1kx/pull/89</a>
 
-3) https://github.com/openrisc/or1k_marocchino/pull/14
+3) <a href = "https://github.com/openrisc/or1k_marocchino/pull/14">https://github.com/openrisc/or1k_marocchino/pull/14</a>
 
-4) https://github.com/librecores/docker-images/pull/20
+4) <a href = "https://github.com/librecores/docker-images/pull/20">https://github.com/librecores/docker-images/pull/20</a>
 

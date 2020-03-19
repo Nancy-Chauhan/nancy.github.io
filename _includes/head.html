@@ -1,19 +1,19 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        {% if page.title == "home" %}
-            {{ site.title }}
-        {% else %}
-            {{ page.title }} &middot; {{ site.title }}
-        {% endif %}
-    </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700" />
-    <link rel="stylesheet" href="{{ site.baseurl }}/styles.css?v={{ site.assets_version }}">
-    <link rel="shortcut icon" href="/public/img/femalecodercat.jpg">
-    {% feed_meta %}
-    {% seo %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    {% if page.title == "home" %}
+    {{ site.title }}
+    {% else %}
+    {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700"/>
+  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css?v={{ site.assets_version }}">
+  <link rel="shortcut icon" href="/public/img/femalecodercat.jpg">
+  {% feed_meta %}
+  {% seo %}
 </head>

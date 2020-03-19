@@ -1,6 +1,6 @@
 # Site settings
 title: Nancy Chauhan
-description: Learner 
+description: Learner
 email: nancychn1@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nancy-chauhan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -8,7 +8,7 @@ url: "https://nancy-chauhan.github.io" # the base hostname & protocol for your s
 assets_version: 1
 
 twitter:
-  username: nancy_nano_
+  username: _nancychauhan
 github:
   username: Nancy-Chauhan
 linkedin:
@@ -33,7 +33,7 @@ feed:
 
 author:
   name: 'Nancy Chauhan'
-  twitter: nancy_nano_
+  twitter: _nancychauhan
 
 plugins:
   - jekyll-feed

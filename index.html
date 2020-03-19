@@ -14,7 +14,7 @@ title: home
           <li><a href="https://twitter.com/_nancychauhan"><i class="fa fa-twitter"></i></a></li>
           <li><a href="https://github.com/Nancy-Chauhan"><i class="fa fa-github"></i></a></li>
           <li><a href="https://www.linkedin.com/in/nancy-chauhan-5a309b15b/"><i class="fa fa-linkedin"></i></a></li>
-	  <li><a href="https://medium.com/@_nancychauhan"><i class="fa fa-medium"></i></a></li>
+          <li><a href="https://medium.com/@_nancychauhan"><i class="fa fa-medium"></i></a></li>
         </ul>
       </div>
     </header>
@@ -23,23 +23,26 @@ title: home
 <div class="row">
   <div class="large-6 large-offset-3 columns">
     <div class="content-section">
-      <p>	
-  <center><strong> Hi! Welcome to my blog. </strong></center></p> <p>I’m Nancy Chauhan. I love <strong>adventures</strong>. Currently, I am an Engineer at Grofers, India. Outside Engineering, I love creating vector illustrations, photography or reading about various topics.<strong><br>Hope you have a nice stay!</strong>       
-	</p>
+      <p>
+      <center><strong> Hi! Welcome to my blog. </strong></center>
+      </p> <p>I’m Nancy Chauhan. I love <strong>adventures</strong>. Currently, I am an Engineer at Grofers, India.
+      Outside Engineering, I love creating vector illustrations, photography or reading about various
+      topics.<strong><br>Hope you have a nice stay!</strong>
+    </p>
     </div>
     <main>
       <div class="posts">
         <h1>Latest Posts</h1>
         {% for post in site.posts limit:5 %}
-          <article class="project-post">
-            <h3>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </h3>
-            <div class="post-date">
-              <time datetime="post.date | date_to_xmlschema">{{ post.date | date_to_long_string }}</time>
-            </div>
-            {{ post.excerpt }}
-          </article>
+        <article class="project-post">
+          <h3>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </h3>
+          <div class="post-date">
+            <time datetime="post.date | date_to_xmlschema">{{ post.date | date_to_long_string }}</time>
+          </div>
+          {{ post.excerpt }}
+        </article>
         {% endfor %}
         <div class="navigation">
           <a class="navigation-button" href="blog">View all</a>

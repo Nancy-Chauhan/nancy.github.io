@@ -1,1 +1,1 @@
-Personal Blog ;)
+<strong>Personal Blog</strong>

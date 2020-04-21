@@ -9,15 +9,6 @@ comments: true
 
 Recently, I have been exploring ways to make systems as monitorable as possible, which means minimizing the number of unknown-unknowns!
 
-<div class="image">
-    <a href="public/img/header.png">
-        <img alt="Monitoring with Micrometer, Prometheus, and Grafana" src="public/img/header.png" />
-    </a>
-<div class="image-caption">
-   "Monitoring with Micrometer, Prometheus, and Grafana" 
-</div>
-</div>
-
 The four pillars of the Observability Engineering team’s charter are :
 
 (Source: [Twitter’s tech blog](https://blog.twitter.com/engineering/en_us/a/2016/observability-at-twitter-technical-overview-part-i.html) )
@@ -47,14 +38,14 @@ We need to add the following dependency :
 
 _In Gradle:_
 
-```compile 'io.micrometer:micrometer-registry-prometheus:latest.release'```
+```compile 'io.micrometer:micrometer-registry-prometheus:latest.release'
+```
 
 ### Configuring
 
 In Micrometer, we need a “Meter,” which is the interface for collecting a set of measurements (which we individually call metrics) about our application.
 
-```
-final PrometheusMeterRegistry prometheusRegistry = new PrometheusMeterRegistry(PrometheusConfig.DEFAULT);
+```final PrometheusMeterRegistry prometheusRegistry = new PrometheusMeterRegistry(PrometheusConfig.DEFAULT);
 ```
 
 Micrometer packs several `Meter` primitives including: `Timer`, `Counter`, `Gauge`, `DistributionSummary`, `LongTaskTimer`, `FunctionCounter`, `FunctionTimerand` and `TimeGauge`. We will be modifying our code to report various metrics using the above set of meters. You can read more about them from [the official documentation](https://micrometer.io/docs/concepts).
@@ -89,7 +80,6 @@ While Prometheus provides some basic visualization, Grafana offers a rich UI whe
 Here we build docker-compose.yml to install Prometheus and Grafana from Docker:
 
 ```*.yaml
-
 version: "3"
 
 services:
@@ -114,7 +104,6 @@ services:
 Let’s now configure Prometheus by setting the scrape interval, the targets, and define the endpoints. To do that, we’ll be using the prometheus.yml file:
 
 ```*.yaml
-
 global:
   scrape_interval: 5s
 
@@ -133,23 +122,7 @@ You can read more about Prometheus configurations, at [the official documentatio
 
 Run `docker-compose up` to start the app, Prometheus and Grafana. Open http://localhost:9090 for Prometheus and http://localhost:3000 for Grafana.
 
-<div class="image">
-    <a href="public/img/Prom_graph.png">
-        <img alt="Graph" src="public/img/Prom_graph.png" />
-    </a>
-    <div class="image-caption">
-        "Prometheus showing graphs of some metric" 
-    </div>
-</div>
-
 To check if Prometheus is pulling metrics from the web app, open “Status”> “Targets.”
-
-<div class="image">
-    <a href="public/img/Prom_status.png">
-        <img alt="Graph" src="public/img/Prom_status.png" />
-    </a>
-</div>
-
 
 ## Setting up Grafana
 
@@ -157,24 +130,12 @@ While docker-compose started Grafana, it doesn’t do much yet.
 
 We need to configure Grafana to connect with Prometheus by manually setting up the data source.
 
-<div class="image">
-    <a href="public/img/grafana-dashboard.png">
-        <img alt="Graph" src="public/img/grafana-dashboard.png" />
-    </a>
-</div>
-
 Then create a dashboard, add a “Query” and select your Prometheus data source, which you just configured.
 
 In the “Metrics” field, add a PromQL query such as:
 
+```http_request_total{application="KeyValue",instance="app:4567",job="key-value",operation="getAll",uri="/keyvalue"}
 ```
-http_request_total{application="KeyValue",instance="app:4567",job="key-value",operation="getAll",uri="/keyvalue"}
-```
-<div class="image">
-    <a href="public/img/create_grafana.png">
-        <img alt="Graph" src="public/img/create_grafana.png" />
-    </a>
-</div>
 
 You can read more about PromQL in [the official documentation](https://prometheus.io/docs/prometheus/latest/querying/basics/).
 
@@ -205,7 +166,6 @@ datasources:
 Create another file, `dashboard.yml` under `provisioning/dashboards`
 
 ```*.yaml
-
 apiVersion: 1
 
 providers:
@@ -218,13 +178,6 @@ providers:
 Export the dashboard you created earlier and put it under folder. You can find the dashboard [here as well](https://github.com/Nancy-Chauhan/keystore/blob/master/grafana/dashboards/KeyValue.json).
 
 Bring docker-compose up, and you should be able to see Grafana with your dashboard and data source set.
-
-<div class="image">
-    <a href="public/img/keyvalue-graph.png">
-        <img alt="Graph" src="public/img/keyvalue-graph.png" />
-    </a>
-</div>
-
 
 Here we saw how to configure a Java application to monitor it with Prometheus. You can explore JMX exporter and Micrometer JVM extras to report several metrics about the JVM and many other java libraries.
 Let me know about your experiences in the comments!

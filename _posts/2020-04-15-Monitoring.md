@@ -38,14 +38,16 @@ We need to add the following dependency :
 
 _In Gradle:_
 
-```compile 'io.micrometer:micrometer-registry-prometheus:latest.release'
+```
+compile 'io.micrometer:micrometer-registry-prometheus:latest.release'
 ```
 
 ### Configuring
 
 In Micrometer, we need a “Meter,” which is the interface for collecting a set of measurements (which we individually call metrics) about our application.
 
-```final PrometheusMeterRegistry prometheusRegistry = new PrometheusMeterRegistry(PrometheusConfig.DEFAULT);
+```
+final PrometheusMeterRegistry prometheusRegistry = new PrometheusMeterRegistry(PrometheusConfig.DEFAULT);
 ```
 
 Micrometer packs several `Meter` primitives including: `Timer`, `Counter`, `Gauge`, `DistributionSummary`, `LongTaskTimer`, `FunctionCounter`, `FunctionTimerand` and `TimeGauge`. We will be modifying our code to report various metrics using the above set of meters. You can read more about them from [the official documentation](https://micrometer.io/docs/concepts).
@@ -134,7 +136,8 @@ Then create a dashboard, add a “Query” and select your Prometheus data sourc
 
 In the “Metrics” field, add a PromQL query such as:
 
-```http_request_total{application="KeyValue",instance="app:4567",job="key-value",operation="getAll",uri="/keyvalue"}
+```
+http_request_total{application="KeyValue",instance="app:4567",job="key-value",operation="getAll",uri="/keyvalue"}
 ```
 
 You can read more about PromQL in [the official documentation](https://prometheus.io/docs/prometheus/latest/querying/basics/).

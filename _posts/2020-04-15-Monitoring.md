@@ -9,6 +9,8 @@ comments: true
 
 Recently, I have been exploring ways to make systems as monitorable as possible, which means minimizing the number of unknown-unknowns!
 
+![Monitoring](https://miro.medium.com/max/1400/0*dbQt8H-2_SBrqBvB.png)
+
 The four pillars of the Observability Engineering team’s charter are :
 
 (Source: [Twitter’s tech blog](https://blog.twitter.com/engineering/en_us/a/2016/observability-at-twitter-technical-overview-part-i.html) )
@@ -116,7 +118,7 @@ scrape_configs:
   - job_name: "key-value"
     static_configs:
       - targets: ['app:4567']
- ```
+```
 
 You can read more about Prometheus configurations, at [the official documentation](https://prometheus.io/docs/prometheus/latest/configuration/configuration/).
 
@@ -124,13 +126,19 @@ You can read more about Prometheus configurations, at [the official documentatio
 
 Run `docker-compose up` to start the app, Prometheus and Grafana. Open http://localhost:9090 for Prometheus and http://localhost:3000 for Grafana.
 
+![Prometheus](https://miro.medium.com/max/1400/0*MMoAFpMmqr0avISJ.png)
+
 To check if Prometheus is pulling metrics from the web app, open “Status”> “Targets.”
+
+![Target](https://miro.medium.com/max/1400/0*fD8WxOJPzfWmxrhE.png)
 
 ## Setting up Grafana
 
 While docker-compose started Grafana, it doesn’t do much yet.
 
 We need to configure Grafana to connect with Prometheus by manually setting up the data source.
+
+![Grafan](https://miro.medium.com/max/1400/0*phvEr1EeAd2CBt2Y.png)
 
 Then create a dashboard, add a “Query” and select your Prometheus data source, which you just configured.
 
@@ -139,6 +147,7 @@ In the “Metrics” field, add a PromQL query such as:
 ```
 http_request_total{application="KeyValue",instance="app:4567",job="key-value",operation="getAll",uri="/keyvalue"}
 ```
+![grafan](https://miro.medium.com/max/1400/0*7R0iKQ40zSS-XoMx.png)
 
 You can read more about PromQL in [the official documentation](https://prometheus.io/docs/prometheus/latest/querying/basics/).
 
@@ -181,6 +190,8 @@ providers:
 Export the dashboard you created earlier and put it under folder. You can find the dashboard [here as well](https://github.com/Nancy-Chauhan/keystore/blob/master/grafana/dashboards/KeyValue.json).
 
 Bring docker-compose up, and you should be able to see Grafana with your dashboard and data source set.
+
+![graph](https://miro.medium.com/max/1400/0*wbzKtK9XQkX-_fre.png)
 
 Here we saw how to configure a Java application to monitor it with Prometheus. You can explore JMX exporter and Micrometer JVM extras to report several metrics about the JVM and many other java libraries.
 Let me know about your experiences in the comments!

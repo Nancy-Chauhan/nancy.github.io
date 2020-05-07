@@ -186,3 +186,5 @@ example.com.        86400   IN  A   93.184.216.34
 ```
 
 A resolver can thus cache the contents of the query for 86400 seconds. This caching helps to speed up the process and reduces the load on DNS servers.
+
+Originally posted at https://todayilearnt.xyz/posts/nancy/dns_resolution/

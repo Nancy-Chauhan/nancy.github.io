@@ -9,37 +9,20 @@ comments: true
 
 Recently was working around DNS and thought to put it here!
 
-Computers work with numbers. Computers talk to another computer using a numeric
-address called IP address. Though structured and thus great for computers, it is
-tough for humans to remember.
+Computers work with numbers. Computers talk to another computer using a numeric address called IP address. Though structured and thus great for computers, it is tough for humans to remember.
 
-DNS acts as the phonebook of the internet 🌐. It converts a web address such as
-"example.com" to an IP address, which computers use to connect, as a result, we
-don't have to remember complicated IP addresses 🤩.
+DNS acts as the phonebook of the internet 🌐. It converts a web address such as "example.com" to an IP address, which computers use to connect. As a result, we don't have to remember complicated IP addresses 🤩.
 
-We are trying to open example.com on a browser. A Typical DNS lookup goes like
-this:
+We are trying to open example.com on a browser. A Typical DNS lookup goes like this:
 
-1. The broswer first looks up "example.com in its DNS cache, if it is present,
-   the browser uses the cached IP address and connects to "example.com". If not
-   then the browser goes to the next step.
-2. Browser issues a `gethostbyname (3)` and passes the resposibility of name
-   resolution to the operating system (OS). The OS now becomes the resolver.
-3. OS looks for the domain name it the system DNS cache. If found then it
+1. The browser first looks up "example.com" in its DNS cache. If it is present, the browser uses the cached IP address and connects to "example.com". If not, then the browser goes to the next step.
+2. Browser issues a `gethostbyname (3)` and passes the responsibility of name resolution to the operating system (OS). The OS    now becomes the resolver.
+3. OS looks for the domain name in the system DNS cache. If found then it
    returns the IP address to the browser else the OS goes to the next step.
-4. The OS looks into `\etc\hosts`, known as the hosts file. The hosts file is a
-   method of maintaining host name to IP address mapping from the ARPANET days. If
-   an entry exists the OS returns the IP address else it goes to the next step.
-5. The OS tries to connect to your configured DNS Servers and sends a DNS query
-   for "example.com". You can manually set your DNS Servers, or your connected
-   networks can configure it for you. The DNS server now becomes the resolver and
-   has to return a respose to the OS of the machine that has sent the DNS query.
-6. The DNS server (resolver) looks into its DNS cache for the host name. If it
-   finds an entry, it returns the same to the calling machine. Else it goes to the
-   next step.
-7. The DNS server tries to connect to root nameserver (.) You can do `dig .` to
-   find root nameserver your DNS server is trying to connect. At present, there are 13
-   root nameservers named with the letters "a" to "m" &mdash; `a.root-servers.net.`
+4. The OS looks into `\etc\hosts`, known as the hosts file. The hosts file is a method of maintaining hostname to IP address mapping from the ARPANET days. If an entry exists, the OS returns the IP address else it goes to the next step.
+5. The OS tries to connect to your configured DNS Servers and sends a DNS query for "example.com". You can manually set your      DNS Servers, or your connected networks can configure it for you. The DNS server now becomes the resolver and has to return a response to the OS of the machine that has sent the DNS query.
+6. The DNS server (resolver) looks into its DNS cache for the hostname. If it finds an entry, it returns the same to the calling machine. Else it goes to the next step.
+7. The DNS server tries to connect to root nameserver (.) You can do `dig .` to find root nameserver your DNS server is trying to connect. At present, there are 13 root nameservers named with the letters "a" to "m" &mdash; `a.root-servers.net.`
     ```
     ➜ dig -t NS .
 
@@ -117,7 +100,7 @@ this:
     f.gtld-servers.net. 172800  IN  A   192.35.51.30
     g.gtld-servers.net. 172800  IN  A   192.42.93.30
     h.gtld-servers.net. 172800  IN  A   192.54.112.30
-    i.gtld-servexrs.net. 172800  IN  A   192.43.172.30
+    i.gtld-servers.net. 172800  IN  A   192.43.172.30
     j.gtld-servers.net. 172800  IN  A   192.48.79.30
     k.gtld-servers.net. 172800  IN  A   192.52.178.30
     l.gtld-servers.net. 172800  IN  A   192.41.162.30
@@ -142,9 +125,7 @@ this:
     ;; MSG SIZE  rcvd: 828
 
     ```
-9. Then DNS server then requests one of the above root nameservers for the
-   authoritative nameserver for the domain `example.com`. This set of nameservers
-   actually host the addresses of the domain as well as any subdomains it may have.
+9. DNS server then requests one of the above root nameservers for the authoritative nameserver for the domain `example.com`. This set of nameservers host the addresses of the domain as well as any subdomains it may have.
     ```
     ➜ dig @a.gtld-servers.net. -t NS example.com
 
@@ -170,8 +151,7 @@ this:
     ;; WHEN: Wed May 06 22:55:10 IST 2020
     ;; MSG SIZE  rcvd: 88
     ```
-10. The DNS server requests the authoritative nameservers for IP addresses of the
-   domain and returns the result to the system that sent it the DNS query.
+10. The DNS server requests the authoritative nameservers for IP addresses of the domain and returns the result to the system that sent it the DNS query.
     ```
     ➜ dig @a.iana-servers.net. -t A example.com
 
@@ -199,12 +179,10 @@ this:
 
 Using the IP address `93.184.216.34`, the web browser connects to the host.
 
-Every stage maintains a cache for some number of seconds based on the `TTL` that
-every query returns. In the following DNS query result, the TTL is `86400` seconds
+Every stage maintains a cache for some number of seconds based on the `TTL` that every query returns. In the following DNS query result, the TTL is `86400` seconds
 
 ```
 example.com.        86400   IN  A   93.184.216.34
 ```
 
-A resolver can thus cache the contents of the query for 86400 seconds. This
-caching helps to speed up the process and reduces the load on DNS servers.
+A resolver can thus cache the contents of the query for 86400 seconds. This caching helps to speed up the process and reduces the load on DNS servers.
